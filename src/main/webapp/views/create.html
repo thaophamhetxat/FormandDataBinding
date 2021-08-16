@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h3>Create Sản Phẩm</h3>
+<form th:action="@{create}" th:object="${list}" method="post" >
+    <table class="table">
+        <tbody>
+        <tr>
+            <td>ID:</td>
+            <td><input placeholder="nhập id" th:field="*{id}"></td>
+            <td>Name:</td>
+            <td><input placeholder="nhập name" th:field="*{name}"></td>
+            <td>price:</td>
+            <td><input placeholder="nhập price" th:field="*{contactNumber}"></td>
+=
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-success">Create</button>
+</form>
+</body>
+</html>
